@@ -27,7 +27,7 @@ public class GameLoop : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
-        // Melee attack with E or Left Click
+        // Melee attack Left Click aoe 
         if (Input.GetMouseButtonDown(0))
         {
             Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, 1.5f);
